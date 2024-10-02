@@ -1,0 +1,157 @@
+
+/*
+int main()
+{
+	while (int x = 12; x >= 1; x--)
+	{
+		std::cout << "Times tables for " << x << '\n'; 
+		while (int y = 12; y >= 1; y--)
+		{
+			std::cout << x << " x " << y << " = " << (x * y) << '\n';
+		}
+   }
+	   
+
+}
+*/
+
+/*
+
+int main()
+{
+	int x = 1;
+	int y = 1;
+	while (x <= 12)
+	{
+		std::cout << "Times tables for " << x << '\n';
+		{
+			while (y <= 12)
+			{
+				std::cout << x << " x " << y << " = " << (x * y) << '\n';
+				y++;
+			}
+		}
+		y = 1; 
+		x++;
+	}
+}
+*/ 
+
+#include <iostream> 
+
+
+
+/*
+int main()
+{
+	char choice;
+	do
+	{
+		std::cout << "Menu of Options\n";
+		std::cout << "a say good moring in spanish x for english";
+		std::cout << "b say good morning in portugese ";
+		std::cout << "c say good morning in italian ";
+		std::cout << "x to enter";
+		std::cout << "Enter your choice";
+		std::cin >> choice; 
+	switch (choice)
+	{
+
+		void SaySpanish()
+		{
+			std::cout << "Buenos Dias"
+		}
+	case'a':
+	{
+		SaySpaish();
+		break;
+	}
+	case'b'
+	{
+		std::cout << "Bon Dia \n";
+		system(pause");
+		system('cls');
+		std::cout << "Hello \n";
+		break;
+	}
+	}
+		
+
+}
+*/ 
+
+
+void triangle()
+{
+	std::cout << "enter base\n";
+	int base;
+	std::cout << "enter the height\n";
+	int height;
+	std::cin >> base;
+	std::cin >> height; 
+	std::cout << (base)*(height) * 1/2;
+	system("pause");
+	system("cls");
+
+}
+void rectangle()
+{
+	std::cout << "enter the base\n";
+	int base;
+	std::cout << "enter the height\n";
+	int height;
+	std::cin >> base;
+	std::cin >> height;
+	std::cout << "The Area is " << (base * height) << '\n';
+	system("pause");
+	system("cls");
+}
+void circle()
+{
+	std::cout << "Enter the Radius\n";
+	int r;
+	std::cin >> r;
+	std::cout << "The Area is " << (3.14 * r) * (3.14 * r) << '\n';
+	system("pause");
+	system("cls");
+
+}
+void end()
+{
+
+	std::cout << "\n"; 
+	system("pause");
+	system("cls");
+
+}
+int main()
+{
+	char choice;
+	do
+	{
+		std::cout << "Enter 1 for area of triangle\n";
+		std::cout << "Enter 2 for area of rectangle\n";
+		std::cout << "Enter 3 for area of circle\n";
+		std::cout << "Enter 4 to exit\n";
+		std::cin >> choice;
+		switch (choice)
+		{
+		case'1':
+
+			triangle();
+			break;
+
+		case'2':
+
+			rectangle();
+			break;
+		case'3':
+
+			circle();
+			break;
+		case'4':
+			end();
+			break;
+		}
+		} while (choice != '4');
+	}
